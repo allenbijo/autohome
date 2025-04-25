@@ -1,6 +1,6 @@
 # 🏠 AutoHome
 
-**AutoHome** is a natural language-driven home automation system powered by [CrewAI](https://crewai.io). It translates your everyday commands — like _"Turn on the lights in the living room"_ or _"Dim the bedroom lights to 50%"_ — into direct, reliable control of your smart devices. No menus, no apps. Just talk, and your home listens.
+**AutoHome** is a natural language-driven home automation system powered by [CrewAI](https://crewai.com). It translates your everyday commands — like _"Turn on the lights in the living room"_ or _"Dim the bedroom lights to 50%"_ — into direct, reliable control of your smart devices. No menus, no apps. Just talk, and your home listens.
 
 ## 🧠 How It Works
 
