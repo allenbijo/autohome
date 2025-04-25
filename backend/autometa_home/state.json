@@ -1,0 +1,74 @@
+{
+  "lights": {
+    "living-room": {
+      "lr-light-1": {
+        "state": "on",
+        "color": "#ff0000",
+        "brightness": 100
+      },
+        "lr-chandelier": {
+          "state": "on",
+          "color": "#00ff00",
+          "brightness": 10
+        }
+    },
+    "kitchen": {
+      "k-light-1": {
+        "state": "off",
+        "color": "#ff0000",
+        "brightness": 0
+      }
+    }
+  },
+  "climate": {
+    "living-room": {
+      "lr-hvac": {
+        "state": "off",
+        "temperature": 22
+      },
+      "lr-fan": {
+        "state": "on",
+        "speed": 0
+      }
+    },
+    "kitchen": {
+      "k-fan": {
+        "state": "on",
+        "speed": 3
+      }
+    }
+  },
+  "media": {
+    "living-room": {
+      "lr-tv": {
+        "state": "on",
+        "volume": 50,
+        "source": "youtube.com/watch?v=123456"
+      },
+      "lr-sound-system": {
+        "state": "off",
+        "volume": 0,
+        "source": "youtube.com/watch?v=654321"
+      }
+    },
+    "kitchen": {
+      "k-speaker": {
+        "state": "off",
+        "volume": 0,
+        "source": "youtube.com/watch?v=654321"
+      }
+    }
+  },
+  "windows": {
+    "living-room": {
+      "lr-window": {
+        "state": "closed"
+      }
+    },
+    "kitchen": {
+      "k-window": {
+        "state": "closed"
+      }
+    }
+  }
+}

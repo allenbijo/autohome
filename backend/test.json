@@ -1,0 +1,70 @@
+{
+  "lights": {
+    "living-room": {
+      "light-1": {
+        "state": "on",
+        "color": "#ff0000",
+        "brightness": 100
+      },
+        "light-2": {
+          "state": "off",
+          "color": "#00ff00",
+          "brightness": 0
+        }
+    },
+    "kitchen": {
+      "light-1": {
+        "state": "off",
+        "color": "#ff0000",
+        "brightness": 0
+      }
+    }
+  },
+  "climate": {
+    "living-room": {
+      "ac": {
+        "state": "on",
+        "temperature": 22
+      },
+      "fan": {
+        "state": "off",
+        "speed": 0
+      }
+    },
+    "kitchen": {
+      "ac": {
+        "state": "off",
+        "temperature": 0
+      },
+      "fan": {
+        "state": "on",
+        "speed": 3
+      }
+    }
+  },
+  "media": {
+    "living-room": {
+      "tv": {
+        "state": "on",
+        "volume": 50,
+        "source": "youtube.com/watch?v=123456"
+      },
+      "sound-system": {
+        "state": "off",
+        "volume": 0,
+        "source": "youtube.com/watch?v=654321"
+      }
+    },
+    "kitchen": {
+      "speaker": {
+        "state": "off",
+        "volume": 0,
+        "source": "youtube.com/watch?v=654321"
+      }
+    }
+  }
+}
+
+
+// device-type > room > device > state
+// room > device-type > device > state

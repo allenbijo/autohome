@@ -1,0 +1,23 @@
+{
+    "rooms": {
+        "living-room": [
+            "lights",
+            "climate",
+            "media",
+            "windows"
+        ],
+        "kitchen": [
+            "lights",
+            "climate",
+            "media",
+            "vacuum"
+        ]
+    },
+    "device_features": {
+        "lights": ["brightness", "color", "state"],
+        "climate": ["temperature", "state"],
+        "media": ["source", "state", "volume"],
+        "windows": ["state"],
+        "vacuum": ["state", "mopping", "speed"]
+    }
+}

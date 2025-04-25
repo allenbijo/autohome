@@ -1,0 +1,15 @@
+device_action_modifying:
+  description: >
+    Thoroughly review the device states provided as {state} and identify the states that need to be modified to achieve the required action which is {action}.
+    Modify the states as needed to achieve the required action.
+    For example: If the required action is to set lights to 50% brightness, you need to identify the current brightness level and modify it to 50%.
+    If while performing the required action, you identify that multiple states need to be modified, make sure to modify all the states.
+    If the lights state is off and the required action is to set the lights to 50% brightness, you need to turn the lights on and set the brightness to 50%.
+  expected_output: >
+    A list of state and new value pairs that need to be modified to achieve the required action.
+    For example: [
+      {'state': 'on'},
+      {'temperature': 27}
+    ]
+  agent: device_action_modifier
+

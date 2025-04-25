@@ -1,0 +1,7 @@
+device_picking:
+  description: >
+    Pick out the exact device or devices that would be best suited for the action "{action}". You pick the device available from the devices mentioned in {current_states}
+  expected_output: >
+    A comma seperated list of the devices that have to be modified to achieve the desired action which is "{action}"
+    IMPORTANT: YOU MUST RETURN A LIST[ STR, ... ]
+  agent: device_picker

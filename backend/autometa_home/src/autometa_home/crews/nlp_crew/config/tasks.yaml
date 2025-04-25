@@ -1,0 +1,20 @@
+intent_identifying:
+  description: >
+    The user said "{intent}" as input and you need to identify the intent of the user. convert it to the intended action to satisfy the user's request.
+    Use the {home_state} to identify the devices that are available in each room and its features.
+    Mention the device name as well if name is specified.
+  expected_output: >
+    A simple sentence that describes the action the AI should take. Also the name of any device if specific.
+  agent: intent_identifier
+
+action_identifying:
+  description: >
+    Using the description of the intent, you need to identify the devices from {home_state} that needs to be modified to achieve the users request.
+    1. device_type: From the description identify the device type, eg. lights, climate, media etc.
+    2. room: From the description identify the room, eg. kitchen, living-room, bedroom etc.
+    3. action_description: From the description identify the action to be taken, example decrease brightness, increase temperature etc.
+    4. If task specifies a particular device by name, mention it in the action_description. eg "the chandelier in hall is really bright" should return "decrease chandelier brightness" as action_description.
+  expected_output: >
+    A list seperated by commas of [("device_type", "room", "action_description"), ...] tuples that need to be modified. Each element in tuple is surrounded by double quotes.
+    IMPORTANT: OUTPUT MUST BE OF THE FORMAT LIST[ TUPLE[ STR, STR, STR ], ...]
+  agent: action_identifier

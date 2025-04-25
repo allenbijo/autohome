@@ -1,0 +1,20 @@
+[project]
+name = "autometa_home"
+version = "0.1.0"
+description = "autometa-home using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.100.1,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "autometa_home.main:kickoff"
+plot = "autometa_home.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
